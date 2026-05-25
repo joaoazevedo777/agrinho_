@@ -1,0 +1,170 @@
+/* --- CSS: Estilos e Tema --- */
+:root {
+    --cor-mel: #f6c90e;
+    --cor-mel-escuro: #e3a008;
+    --cor-abelha: #303030;
+    --cor-natureza: #4a7c59;
+    --cor-fundo: #f9f9f9;
+    --cor-branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-abelha);
+    line-height: 1.6;
+}
+
+/* Header / Hero */
+header {
+    background: linear-gradient(135deg, var(--cor-natureza), #2c5e3e);
+    color: var(--cor-branco);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--cor-mel);
+}
+
+.logo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    color: var(--cor-mel);
+}
+
+/* Container Principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+    background: var(--cor-branco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--cor-natureza);
+    border-left: 5px solid var(--cor-mel);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Cards de Informação */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid var(--cor-mel);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(246, 201, 14, 0.4);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Sobre o Texto */
+.content-text {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/* Quiz Interativo */
+#quiz-area {
+    text-align: center;
+    border: 2px dashed var(--cor-natureza);
+}
+
+.question-box {
+    display: none;
+}
+
+.question-box.active {
+    display: block;
+}
+
+.btn {
+    background-color: var(--cor-natureza);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--cor-mel);
+    color: var(--cor-abelha);
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--cor-natureza);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: var(--cor-abelha);
+    color: var(--cor-branco);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.agrinho-badge {
+    background-color: var(--cor-mel);
+    color: var(--cor-abelha);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .container { padding: 10px; }
+    section { padding: 15px; }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho 2026: Guardiãs da Biodiversidade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>Projeto Polinizadores</h1>
+            <p class="subtitle">Agrinho 2026: Proteção da Vida no Campo</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Introdução -->
+        <section id="intro">
+            <h2>Por que proteger as abelhas?</h2>
+            <div class="content-text">
+                <p>As abelhas são os maiores闺蜜 da natureza. Sem elas, a produção de alimentos diminui drasticamente. No Agrinho 2026, nosso objetivo é conscientizar a comunidade escolar e rural sobre a importância desses pequenos insetos para a segurança alimentar e a manutenção dos ecossistemas.</p>
+            </div>
+        </section>
+
+        <!-- Ações Simples -->
+        <section id="acoes">
+            <h2>Como ajudar os polinizadores?</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-icon">🌸</span>
+                    <h3>Plantar Flores</h3>
+                    <p>Plante espécies nativas e floridas (alfazema, girassol, alecrim) para oferecer alimento o ano todo.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">💧</span>
+                    <h3>Água Limpa</h3>
+                    <p>Deixe um recipiente com água e pedras para as abelhas beberem e pousarem com segurança.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🚫💊</span>
+                    <h3>Sem Venenos</h3>
+                    <p>Evite agrotóxicos. Use controle biológico de pragas para proteger as abelhas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Área do Quiz (JS) -->
+        <section id="quiz-area">
+            <h2>Teste seus conhecimentos!</h2>
+            <p>Responda as perguntas para aprender mais sobre o papel das abelhas.</p>
+            
+            <div id="question-1" class="question-box active">
+                <p><strong>Pergunta 1:</strong> Qual é a principal atividade das abelhas na agricultura?</p>
+                <button class="btn" onclick="checkAnswer(1, false)">Colher mel</button>
+                <button class="btn" onclick="checkAnswer(1, true)">Polinizar as plantas</button>
+                <button class="btn" onclick="checkAnswer(1, false)">Comer formigas</button>
+            </div>
+
+            <div id="question-2" class="question-box">
+                <p><strong>Pergunta 2:</strong> Se as abelhas desaparecerem, qual será o impacto?</p>
+                <button class="btn" onclick="checkAnswer(2, true)">Fome no mundo (falta de alimentos)</button>
+                <button class="btn" onclick="checkAnswer(2, false)">Teremos mais flores</button>
+                <button class="btn" onclick="checkAnswer(2, false)">A chuva vai aumentar</button>
+            </div>
+
+            <div id="question-3" class="question-box">
+                <p><strong>Pergunta 3:</strong> O que é necessário para criar abelhas com amor?</p>
+                <button class="btn" onclick="checkAnswer(3, false)">Colher elas com a mão</button>
+                <button class="btn" onclick="checkAnswer(3, false)">Colocar em potes fechados</button>
+                <button class="btn" onclick="checkAnswer(3, true)">Respeitar o espaço delas e usar fumo</button>
+            </div>
+
+            <div id="final-result" class="question-box">
+                <h3>Obrigado por participar!</h3>
+                <p>Você ajudando a-spread a palavra, está salvando as abelhas.</p>
+                <div class="result" id="score-display"></div>
+                <button class="btn" onclick="location.reload()">Reiniciar</button>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido para o projeto Agrinho 2026 - LEARP/PR</p>
+        <div class="agrinho-badge">Proteção de Abelhas e Polinizadores</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
